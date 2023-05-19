@@ -1,0 +1,658 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B37FE929-F55C-46A4-9ED3-246530FB73EA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GUI_GiaoDien</RootNamespace>
+    <AssemblyName>GUI_GiaoDien</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI">
+      <HintPath>D:\framwork-main\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>D:\framwork-main\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DSHoaDon.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSHoaDon.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FomDanhSach\Form_DSChungChi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FomDanhSach\Form_DSChungChi.Designer.cs">
+      <DependentUpon>Form_DSChungChi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FomDanhSach\Form_DSDangKiThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FomDanhSach\Form_DSDangKiThi.Designer.cs">
+      <DependentUpon>Form_DSDangKiThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FomDanhSach\Form_DSHocVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FomDanhSach\Form_DSHocVien.Designer.cs">
+      <DependentUpon>Form_DSHocVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FomDanhSach\Form_DSLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FomDanhSach\Form_DSLop.Designer.cs">
+      <DependentUpon>Form_DSLop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChinh.Designer.cs">
+      <DependentUpon>FormChinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFlash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFlash.Designer.cs">
+      <DependentUpon>FormFlash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHoaDon\Form_HoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHoaDon\Form_HoaDon.Designer.cs">
+      <DependentUpon>Form_HoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHocVien\Form_ChungChi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHocVien\Form_ChungChi.Designer.cs">
+      <DependentUpon>Form_ChungChi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHocVien\Form_DiemThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHocVien\Form_DiemThi.Designer.cs">
+      <DependentUpon>Form_DiemThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHocVien\Form_DangKiThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHocVien\Form_DangKiThi.Designer.cs">
+      <DependentUpon>Form_DangKiThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHocVien\Form_HocVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHocVien\Form_HocVien.Designer.cs">
+      <DependentUpon>Form_HocVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHoTro\Form_HoTro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHoTro\Form_HoTro.Designer.cs">
+      <DependentUpon>Form_HoTro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLopHoc\Form_LopHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLopHoc\Form_LopHoc.Designer.cs">
+      <DependentUpon>Form_LopHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLopHoc\Form_KhoaHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLopHoc\Form_KhoaHoc.Designer.cs">
+      <DependentUpon>Form_KhoaHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLopHoc\Form_LoaiLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLopHoc\Form_LoaiLop.Designer.cs">
+      <DependentUpon>Form_LoaiLop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNhacNho\Form_NhacNho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNhacNho\Form_NhacNho.Designer.cs">
+      <DependentUpon>Form_NhacNho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNhacNho\Form_TaoGhiChu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNhacNho\Form_TaoGhiChu.Designer.cs">
+      <DependentUpon>Form_TaoGhiChu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNhanVien\Form_NhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNhanVien\Form_NhanVien.Designer.cs">
+      <DependentUpon>Form_NhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThongBao\Form_ThongBao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThongBao\Form_ThongBao.Designer.cs">
+      <DependentUpon>Form_ThongBao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThongKe\Form_ThongKeNam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThongKe\Form_ThongKeNam.Designer.cs">
+      <DependentUpon>Form_ThongKeNam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThongKe\Form_ThongKeThang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThongKe\Form_ThongKeThang.Designer.cs">
+      <DependentUpon>Form_ThongKeThang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTroGiang\Form_TroGiang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTroGiang\Form_TroGiang.Designer.cs">
+      <DependentUpon>Form_TroGiang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTroGiang\Form_GiangVienChinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTroGiang\Form_GiangVienChinh.Designer.cs">
+      <DependentUpon>Form_GiangVienChinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DangNhap.Designer.cs">
+      <DependentUpon>Form_DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DoiMatKhau.Designer.cs">
+      <DependentUpon>Form_DoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Form\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Form\Report_HocVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_Form\Report_HocVien.Designer.cs">
+      <DependentUpon>Report_HocVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="View_Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Profile.Designer.cs">
+      <DependentUpon>View_Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LopDuLieuDungChung.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThemeColor.cs" />
+    <EmbeddedResource Include="FomDanhSach\Form_DSChungChi.resx">
+      <DependentUpon>Form_DSChungChi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FomDanhSach\Form_DSDangKiThi.resx">
+      <DependentUpon>Form_DSDangKiThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FomDanhSach\Form_DSHocVien.resx">
+      <DependentUpon>Form_DSHocVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FomDanhSach\Form_DSLop.resx">
+      <DependentUpon>Form_DSLop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChinh.resx">
+      <DependentUpon>FormChinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFlash.resx">
+      <DependentUpon>FormFlash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHoaDon\Form_HoaDon.resx">
+      <DependentUpon>Form_HoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHocVien\Form_ChungChi.resx">
+      <DependentUpon>Form_ChungChi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHocVien\Form_DangKiThi.resx">
+      <DependentUpon>Form_DangKiThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHocVien\Form_DiemThi.resx">
+      <DependentUpon>Form_DiemThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHocVien\Form_HocVien.resx">
+      <DependentUpon>Form_HocVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHoTro\Form_HoTro.resx">
+      <DependentUpon>Form_HoTro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLopHoc\Form_KhoaHoc.resx">
+      <DependentUpon>Form_KhoaHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLopHoc\Form_LoaiLop.resx">
+      <DependentUpon>Form_LoaiLop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLopHoc\Form_LopHoc.resx">
+      <DependentUpon>Form_LopHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNhacNho\Form_NhacNho.resx">
+      <DependentUpon>Form_NhacNho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNhacNho\Form_TaoGhiChu.resx">
+      <DependentUpon>Form_TaoGhiChu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNhanVien\Form_NhanVien.resx">
+      <DependentUpon>Form_NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThongBao\Form_ThongBao.resx">
+      <DependentUpon>Form_ThongBao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThongKe\Form_ThongKeNam.resx">
+      <DependentUpon>Form_ThongKeNam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThongKe\Form_ThongKeThang.resx">
+      <DependentUpon>Form_ThongKeThang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTroGiang\Form_GiangVienChinh.resx">
+      <DependentUpon>Form_GiangVienChinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTroGiang\Form_TroGiang.resx">
+      <DependentUpon>Form_TroGiang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DangNhap.resx">
+      <DependentUpon>Form_DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DoiMatKhau.resx">
+      <DependentUpon>Form_DoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportHoaDon.rdlc" />
+    <EmbeddedResource Include="Report_Form\ReportHocVien.rdlc" />
+    <EmbeddedResource Include="Report_Form\Report_HocVien.resx">
+      <DependentUpon>Report_HocVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Profile.resx">
+      <DependentUpon>View_Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="DSHoaDon.xsc">
+      <DependentUpon>DSHoaDon.xsd</DependentUpon>
+    </None>
+    <None Include="DSHoaDon.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSHoaDon.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSHoaDon.xss">
+      <DependentUpon>DSHoaDon.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Report_Form\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Report_Form\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report_Form\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\icons8_management_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_update_tag_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_school_director_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_warehouse_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_student_male_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_receipt_dollar_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_statistics_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_customer_support_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_alarm_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_export_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Logout_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_export_32px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_administrator_male_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_administrator_male_32px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_training_32px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_warehouse_32px_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_read_online_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_receipt_terminal_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_decline_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_customer_support_32px_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_alarm_32px_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_add_database_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_power_off_button_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_ubuntu.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_list.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_info.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_alarm.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS_XuLyNghiepVu\BUS_XuLyNghiepVu.csproj">
+      <Project>{f549c99a-c220-4a4e-a880-c26c5d1ee11f}</Project>
+      <Name>BUS_XuLyNghiepVu</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO_DuLieu\DTO_DuLieu.csproj">
+      <Project>{197b42ea-28d7-4ee4-b594-e8abfbf7b1cc}</Project>
+      <Name>DTO_DuLieu</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_add_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Edit_Text_File.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_printer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_sync.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_cancel_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_search.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_search_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\55393-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_menu_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_menu.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cropped-bigo_5000x5000-300x300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Orange Brown Online Coding Class Youtube Thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Big-O Coding2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cropped-bigo_5000x5000-300x3001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\284a6bdeb817a2880aa14bd9b6a00f65.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4b83d04ded1213f196b13ffc0baae4c8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e42b953c7ea6a4b920bf3979bd9cce7d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6644b34c91f57f8d40a4eaa94e3cb797.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue 3D Elements 5G Technology Presentation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_alarm_32px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_alarm_32px_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e4ab90e3686884f34ebf0f0963d00bab.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\130689705_413842116642468_2801677285967193123_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_search1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue Purple Modern Abstract Programmer Resume.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Big-O Coding21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black and Blue Simple Developer Business Card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Orange Brown Online Coding Class Youtube Thumbnail1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Orange Brown Online Coding Class Youtube Thumbnail2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_staff_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_student_male_52px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_course_52px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_class_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_receipt_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\th %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_bell_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c405e68a1471fb2fa260.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_search_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Hamburger_Menu_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_user_shield_27px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_user_shield_25px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_user_shield_22px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_email_send_35px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_settings_35px_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_expand_arrow_35px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_student_male_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_currency_exchange_70px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue and Purple Casual Corporate App Development Startup Project Kickoff Company Presentation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_teacher_70px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_receive_cash_70px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_user_70px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled designvv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_info1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_add_graph_report_32px.png" />
+    <None Include="Resources\Blue and Purple Casual Corporate App Development Startup Project Kickoff Company Presentation1.gif" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

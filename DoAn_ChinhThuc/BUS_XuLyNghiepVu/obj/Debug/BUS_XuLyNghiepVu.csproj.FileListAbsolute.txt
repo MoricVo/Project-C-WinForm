@@ -1,0 +1,11 @@
+E:\TAILIEUHOCTAP\HK2_Nam3\Programming Manager\Doan_Canhan\DoAn_ChinhThuc\BUS_XuLyNghiepVu\bin\Debug\BUS_XuLyNghiepVu.dll
+E:\TAILIEUHOCTAP\HK2_Nam3\Programming Manager\Doan_Canhan\DoAn_ChinhThuc\BUS_XuLyNghiepVu\bin\Debug\BUS_XuLyNghiepVu.pdb
+E:\TAILIEUHOCTAP\HK2_Nam3\Programming Manager\Doan_Canhan\DoAn_ChinhThuc\BUS_XuLyNghiepVu\bin\Debug\DAO_XuLyDuLieu.dll
+E:\TAILIEUHOCTAP\HK2_Nam3\Programming Manager\Doan_Canhan\DoAn_ChinhThuc\BUS_XuLyNghiepVu\bin\Debug\DTO_DuLieu.dll
+E:\TAILIEUHOCTAP\HK2_Nam3\Programming Manager\Doan_Canhan\DoAn_ChinhThuc\BUS_XuLyNghiepVu\bin\Debug\DAO_XuLyDuLieu.pdb
+E:\TAILIEUHOCTAP\HK2_Nam3\Programming Manager\Doan_Canhan\DoAn_ChinhThuc\BUS_XuLyNghiepVu\bin\Debug\DTO_DuLieu.pdb
+E:\TAILIEUHOCTAP\HK2_Nam3\Programming Manager\Doan_Canhan\DoAn_ChinhThuc\BUS_XuLyNghiepVu\obj\Debug\BUS_XuLyNghiepVu.csproj.AssemblyReference.cache
+E:\TAILIEUHOCTAP\HK2_Nam3\Programming Manager\Doan_Canhan\DoAn_ChinhThuc\BUS_XuLyNghiepVu\obj\Debug\BUS_XuLyNghiepVu.csproj.CoreCompileInputs.cache
+E:\TAILIEUHOCTAP\HK2_Nam3\Programming Manager\Doan_Canhan\DoAn_ChinhThuc\BUS_XuLyNghiepVu\obj\Debug\BUS_XuLyNghiepVu.csproj.CopyComplete
+E:\TAILIEUHOCTAP\HK2_Nam3\Programming Manager\Doan_Canhan\DoAn_ChinhThuc\BUS_XuLyNghiepVu\obj\Debug\BUS_XuLyNghiepVu.dll
+E:\TAILIEUHOCTAP\HK2_Nam3\Programming Manager\Doan_Canhan\DoAn_ChinhThuc\BUS_XuLyNghiepVu\obj\Debug\BUS_XuLyNghiepVu.pdb

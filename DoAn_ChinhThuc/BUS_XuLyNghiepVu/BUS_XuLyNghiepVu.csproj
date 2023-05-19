@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F549C99A-C220-4A4E-A880-C26C5D1EE11F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BUS_XuLyNghiepVu</RootNamespace>
+    <AssemblyName>BUS_XuLyNghiepVu</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BUS_ChungChi.cs" />
+    <Compile Include="BUS_DangKyThi.cs" />
+    <Compile Include="BUS_DiemThi.cs" />
+    <Compile Include="BUS_GiangVienChinh.cs" />
+    <Compile Include="BUS_HoaDon.cs" />
+    <Compile Include="BUS_HocVien.cs" />
+    <Compile Include="BUS_KhoaHoc.cs" />
+    <Compile Include="BUS_LopHoc.cs" />
+    <Compile Include="BUS_MaLopHoc.cs" />
+    <Compile Include="BUS_NhanVien.cs" />
+    <Compile Include="BUS_ThongKeNam.cs" />
+    <Compile Include="BUS_ThongKeThang.cs" />
+    <Compile Include="BUS_TroGiang.cs" />
+    <Compile Include="CSDL_BUS.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAO_XuLyDuLieu\DAO_XuLyDuLieu.csproj">
+      <Project>{a9bb65d7-7f7f-4a61-a99a-a4b833e70084}</Project>
+      <Name>DAO_XuLyDuLieu</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO_DuLieu\DTO_DuLieu.csproj">
+      <Project>{197b42ea-28d7-4ee4-b594-e8abfbf7b1cc}</Project>
+      <Name>DTO_DuLieu</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

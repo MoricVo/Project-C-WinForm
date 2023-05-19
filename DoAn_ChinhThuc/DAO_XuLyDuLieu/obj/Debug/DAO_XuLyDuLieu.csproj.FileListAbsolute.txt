@@ -1,0 +1,9 @@
+E:\TAILIEUHOCTAP\HK2_Nam3\Programming Manager\Doan_Canhan\DoAn_ChinhThuc\DAO_XuLyDuLieu\bin\Debug\DAO_XuLyDuLieu.dll
+E:\TAILIEUHOCTAP\HK2_Nam3\Programming Manager\Doan_Canhan\DoAn_ChinhThuc\DAO_XuLyDuLieu\bin\Debug\DAO_XuLyDuLieu.pdb
+E:\TAILIEUHOCTAP\HK2_Nam3\Programming Manager\Doan_Canhan\DoAn_ChinhThuc\DAO_XuLyDuLieu\bin\Debug\DTO_DuLieu.dll
+E:\TAILIEUHOCTAP\HK2_Nam3\Programming Manager\Doan_Canhan\DoAn_ChinhThuc\DAO_XuLyDuLieu\bin\Debug\DTO_DuLieu.pdb
+E:\TAILIEUHOCTAP\HK2_Nam3\Programming Manager\Doan_Canhan\DoAn_ChinhThuc\DAO_XuLyDuLieu\obj\Debug\DAO_XuLyDuLieu.csproj.AssemblyReference.cache
+E:\TAILIEUHOCTAP\HK2_Nam3\Programming Manager\Doan_Canhan\DoAn_ChinhThuc\DAO_XuLyDuLieu\obj\Debug\DAO_XuLyDuLieu.csproj.CoreCompileInputs.cache
+E:\TAILIEUHOCTAP\HK2_Nam3\Programming Manager\Doan_Canhan\DoAn_ChinhThuc\DAO_XuLyDuLieu\obj\Debug\DAO_XuLyDuLieu.csproj.CopyComplete
+E:\TAILIEUHOCTAP\HK2_Nam3\Programming Manager\Doan_Canhan\DoAn_ChinhThuc\DAO_XuLyDuLieu\obj\Debug\DAO_XuLyDuLieu.dll
+E:\TAILIEUHOCTAP\HK2_Nam3\Programming Manager\Doan_Canhan\DoAn_ChinhThuc\DAO_XuLyDuLieu\obj\Debug\DAO_XuLyDuLieu.pdb

@@ -1,0 +1,6 @@
+E:\TAILIEUHOCTAP\HK2_Nam3\Programming Manager\Doan_Canhan\DoAn_ChinhThuc\DTO_DuLieu\bin\Debug\DTO_DuLieu.dll
+E:\TAILIEUHOCTAP\HK2_Nam3\Programming Manager\Doan_Canhan\DoAn_ChinhThuc\DTO_DuLieu\bin\Debug\DTO_DuLieu.pdb
+E:\TAILIEUHOCTAP\HK2_Nam3\Programming Manager\Doan_Canhan\DoAn_ChinhThuc\DTO_DuLieu\obj\Debug\DTO_DuLieu.csproj.CoreCompileInputs.cache
+E:\TAILIEUHOCTAP\HK2_Nam3\Programming Manager\Doan_Canhan\DoAn_ChinhThuc\DTO_DuLieu\obj\Debug\DTO_DuLieu.dll
+E:\TAILIEUHOCTAP\HK2_Nam3\Programming Manager\Doan_Canhan\DoAn_ChinhThuc\DTO_DuLieu\obj\Debug\DTO_DuLieu.pdb
+E:\TAILIEUHOCTAP\HK2_Nam3\Programming Manager\Doan_Canhan\DoAn_ChinhThuc\DTO_DuLieu\obj\Debug\DTO_DuLieu.csproj.AssemblyReference.cache
